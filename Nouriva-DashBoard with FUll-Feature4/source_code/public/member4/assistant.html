@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Assistant – Learn Sphere</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Food Assistant</h1>
+  <p>Ask about food, nutrition and recipes.</p>
+  <nav>
+    <a href="tracker.html">Food Log</a>
+    <a href="assistant.html" class="active">Food Assistant</a>
+  </nav>
+</header>
+
+<!-- ============================================================================
+     PART B — CONVERSATIONAL AI FOOD ASSISTANT  (HTML)
+     ============================================================================ -->
+<main>
+  <div class="card chat">
+    <!-- B.1: Chat interface -->
+    <div id="chatLog" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form class="chatForm" id="chatForm">
+      <input id="chatInput" placeholder="e.g. I have egg, rice and potato. What can I cook?" maxlength="500" autocomplete="off">
+      <button class="btn" id="sendBtn" type="submit">Send</button>
+    </form>
+    <p class="note">General food information only. For medical conditions, please talk to a doctor or registered dietitian.</p>
+  </div>
+</main>
+
+<script src="js/common.js"></script>
+<script src="js/assistant.js"></script>
+</body>
+</html>
